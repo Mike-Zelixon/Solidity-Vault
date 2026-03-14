@@ -1,5 +1,5 @@
-# Solidity-Vault
-A simple vault for withdrawing and depositing ETH with a full test suite in forge
+# Solidity Vault
+A simple vault for withdrawing and depositing ETH with a full test suite in forge.
 
 # Overview 
 A simple solidity contract designed to act as a vault for depositing and withdrawing ETH. 
