@@ -31,4 +31,7 @@ fail with smart contract recipients.
 
 **Custom errors** — custom errors are used instead of require strings 
 for gas efficiency. They cost less to deploy and revert with less gas.
+
+# Running Tests
+forge test
  
