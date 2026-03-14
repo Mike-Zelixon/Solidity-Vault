@@ -92,6 +92,7 @@ Instead of relying only on revert strings, the contract uses custom errors such 
 - `ZeroETH()`
 - `InvalidWithdraw()`
 - `InsufficientBalance()`
+- `WithdrawalFailed()`
 
 This improves readability and reduces gas usage.
 
