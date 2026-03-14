@@ -11,6 +11,7 @@ contract MyVault {
     error ZeroDeposit();
     error ZeroWithdrawal();
     error InsufficientWD(); 
+    error WithdrawalFailed();
 
     function deposit() external payable {
 
@@ -28,7 +29,7 @@ contract MyVault {
         balances[msg.sender] -= amount;
 
         (bool ok, ) = msg.sender.call{value: amount}("");
-        require(ok, "WD Failed");
+        if (!ok) revert WithdrawalFailed();
 
         emit Withdrawn(amount, msg.sender);
 
