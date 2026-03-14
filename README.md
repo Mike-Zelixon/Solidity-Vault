@@ -3,7 +3,9 @@ A simple vault for withdrawing and depositing ETH with a full test suite in forg
 
 # Overview 
 A simple solidity contract designed to act as a vault for depositing and withdrawing ETH. 
+
 The vault has three functions: deposit, withdraw, and a balance checker. 
+
 The project includes a test suite in foundry for all three functions. 
 
 # Functions 
