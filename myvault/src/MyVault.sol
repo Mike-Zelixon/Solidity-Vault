@@ -6,7 +6,7 @@ contract MyVault {
     mapping (address => uint256) private balances;
 
     event Deposited(uint256 amount, address indexed depositor);
-    event Withdrawn(uint256 amount, address indexed withdrawal);
+    event Withdrawn(uint256 amount, address indexed recipient);
 
     error ZeroDeposit();
     error ZeroWithdrawal();
